@@ -18,7 +18,13 @@ class ViewController: UIViewController {
         print(bInt)
         print(bInt!)
         print(aInt ?? 100)
-        print(aInt!) // 闪退
+        // print(aInt!) // 闪退
+        var a:Int? = nil;
+        if a != nil{
+            print(a)
+        }else{
+            print("没有值")
+        }
         
     }
 
