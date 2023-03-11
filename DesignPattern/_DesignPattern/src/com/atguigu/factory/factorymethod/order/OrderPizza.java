@@ -1,0 +1,74 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+/**
+ * @author Jim
+ * @Description 订购披萨
+ * @createTime 2022年08月16日
+ */
+
+
+public abstract class OrderPizza {
+
+    public OrderPizza(){
+        Pizza pizza = null;
+        String orderType ; // 订购 Pizza 类型
+        do{
+            orderType = gettype();
+            createPizza(orderType);
+            // 输出Pizza 制作过程
+            pizza.prepare();
+            pizza.bake();
+            pizza.cut();
+            pizza.box();
+        }while(true);
+    }
+
+    /**
+     * 定义一个简单工厂对象
+     */
+//    Pizza pizza = null;
+//
+//    // 构造器
+//    public OrderPizza(SimpleFactory simpleFactory){
+//        setSimpleFactory(simpleFactory);
+//    }
+//    public void setSimpleFactory(SimpleFactory simpleFactory){
+//        String orderType = ""; // 用户输入的
+//        this.simpleFactory = simpleFactory;
+//
+//        do{
+//            orderType = gettype();
+//            pizza = this.simpleFactory.createPizza(orderType);
+//            if(null != pizza){
+//                pizza.prepare();
+//                pizza.bake();
+//                pizza.cut();
+//                pizza.box();
+//            }else{
+//                System.out.println("订购Pizza失败");
+//                break;
+//            }
+//        }while(true);
+//    }
+
+    // 定义一个抽象方法  createPizza
+    abstract Pizza createPizza(String orderType);
+    /**
+     * 可以获取客户希望订购的Pizza类
+     */
+
+    private String gettype(){
+        try{
+            BufferedReader strin = new BufferedReader(new InputStreamReader(System.in));
+            System.out.print("input pizza type:");
+            String str = strin.readLine();
+            return str;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+}
