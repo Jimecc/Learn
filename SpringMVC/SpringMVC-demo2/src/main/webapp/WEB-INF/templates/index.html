@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    <h1>首页</h1>
+    <a th:href="@{/hello/success}">点击跳转</a><br>
+    <a th:href="@{/hello/test}">点击测试----->test</a><br>
+    <a th:href="@{/hello/post}">点击测试----->post</a><br>
+    <br>
+    <form th:action="@{/hello/test}" method="post">
+      <input type="submit" value="测试 Method 属性，当前方式为 POST">
+    </form><br>
+    <a th:href="@{/hello/testGetMapping}">测试 GetMapping</a><br>
+    <a th:href="@{/hello/testParams(username='123',password='1234556')}">测试 Params</a><br>
+    <a th:href="@{/hello/testHeaders}">测试 Headers</a><br>
+    <a th:href="@{/hello/a1a/testAnt}">点击测试----->post</a><br>
+
+</body>
+</html>
