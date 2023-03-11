@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="350.0" prefWidth="500.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jim.sprjfx.view.TLoginView">
+    <children>
+        <Pane prefHeight="132.0" prefWidth="509.0" style="-fx-background-color: #ffa8aa;">
+            <children>
+                <Pane layoutX="2.0" layoutY="66.0" prefHeight="29.0" prefWidth="121.0" style="-fx-background-color: #ffa8aa;" />
+                <Label layoutX="3.0" layoutY="64.0" opacity="0.08" text="泰州学院" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Pane layoutX="2.0" layoutY="76.0" prefHeight="53.0" prefWidth="109.0" style="-fx-background-color: #ffa8aa;" />
+                <Label layoutX="2.0" layoutY="72.0" opacity="0.15" text="泰州学院" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Pane layoutX="1.0" layoutY="86.0" prefHeight="29.0" prefWidth="187.0" style="-fx-background-color: #ffa8aa;" />
+                <Pane layoutY="99.0" prefHeight="16.0" prefWidth="159.0" style="-fx-background-color: #ffa8aa;" />
+                <Label layoutX="2.0" layoutY="82.0" opacity="0.3" text="泰州学院" textFill="WHITE">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Pane layoutX="2.0" layoutY="100.0" prefHeight="29.0" prefWidth="175.0" style="-fx-background-color: #ffa8aa;" />
+                <Label layoutX="2.0" layoutY="92.0" opacity="0.5" text="泰州学院" textFill="WHITE">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+                <Pane layoutY="115.0" prefHeight="16.0" prefWidth="167.0" style="-fx-background-color: #ffa8aa;" />
+                <Label layoutX="1.0" layoutY="106.0" prefWidth="146.0" text="泰州学院" textFill="WHITE">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+                <Line endX="105.375" layoutX="256.0" layoutY="87.0" opacity="0.26" startX="-103.0" stroke="WHITE" strokeType="OUTSIDE" />
+                <Label layoutX="157.0" layoutY="49.0" opacity="0.07" text="网上选课.">
+                    <font>
+                        <Font size="48.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" startX="1.0" startY="0.7363420427553445">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="0.37037035822868347" blue="0.37037035822868347" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Label>
+                <Pane layoutX="118.0" layoutY="6.0" prefHeight="52.0" prefWidth="49.0" style="-fx-background-color: #ffa8aa;" />
+                <Label layoutX="157.0" layoutY="38.0" text="网上选课.">
+                    <font>
+                        <Font size="48.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="0.37037035822868347" green="0.5067901015281677" blue="1.0" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="0.006711409395973154">
+                                    <color>
+                                        <Color red="0.37037035822868347" green="0.5067901015281677" blue="1.0" />
+                                    </color>
+                                </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.6574074029922485" green="1.0" blue="0.8629629611968994" />
+                           </color>
+                        </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Label>
+            </children></Pane>
+
+        <TextField fx:id="textField_username" onAction="#onActionUsername" onMouseClicked="#onMouseClicked_textFieldLogin" focusTraversable="false" layoutX="165.0" layoutY="162.0" prefHeight="33.0" prefWidth="187.0" promptText="用户名/手机号/邮箱">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </TextField>
+        <CheckBox focusTraversable="false" layoutX="177.0" layoutY="245.0" mnemonicParsing="false" text="记住密码" textFill="#979696">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </CheckBox>
+        <CheckBox focusTraversable="false" layoutX="271.0" layoutY="244.0" mnemonicParsing="false" text="自动登录" textFill="#979696">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </CheckBox>
+        <Button fx:id="ButtonLogin" onMouseMoved="#Moved_buttonLogin" onMouseClicked="#Clicked_buttonLogin" layoutX="165.0" layoutY="269.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="187.0" style="-fx-background-color: #33CCFF;" text="登      录" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <PasswordField fx:id="textField_password" onAction="#onActionPassword" onMouseClicked="#onMouseClicked_textFieldPassword" focusTraversable="false" layoutX="165.0" layoutY="204.0" prefHeight="33.0" prefWidth="187.0" promptText="密码">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </PasswordField>
+        <Button fx:id="ButtonRegist" onMouseClicked="#onMouseClicked_buttonrRegist" onMouseMoved="#onMouseMoved_buttonRegist" layoutX="12.0" layoutY="311.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="注册账号" textFill="#9a9a9a" />
+        <Button fx:id="ButtonALogin" onMouseClicked="#Click_ALogin" onMouseMoved="#Moved_ALogin" layoutX="421.0" layoutY="311.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="学生登录" textFill="#9a9a9a" />
+        <Label fx:id="labelErrorUsername" layoutX="166.0" layoutY="144.0" textFill="#ff5b5b">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

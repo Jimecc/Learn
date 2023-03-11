@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jim.sprjfx.mapper.LesStuMapper">
+
+    <resultMap id="BaseMap" type="com.jim.sprjfx.entity.LesStu">
+        <id column="id" property="id"/>
+        <result column="stuid" property="stuid"/>
+        <result column="lesid" property="lesid"/>
+    </resultMap>
+    <insert id="insert" parameterType="com.jim.sprjfx.entity.LesStu" >
+        insert into cclass.lesstu(stuid,lesid) values (#{stuid},#{lesid})
+    </insert>
+    <delete id="deleteLes" parameterType="com.jim.sprjfx.entity.LesStu">
+        delete from cclass.lesstu where stuid=#{stuid} and lesid=#{lesid}
+    </delete>
+    <delete id="deleteByLesid" parameterType="Integer">
+        delete from cclass.lesstu where lesid=#{lesid}
+    </delete>
+    <select id="getByLesAndStu" resultType="com.jim.sprjfx.entity.LesStu">
+        select * from cclass.lesstu where stuid=#{stuid} and lesid=#{lesid}
+    </select>
+    <select id="selectByStuID" resultMap="BaseMap">
+        select * from cclass.lesstu where stuid=#{id}
+    </select>
+
+</mapper>

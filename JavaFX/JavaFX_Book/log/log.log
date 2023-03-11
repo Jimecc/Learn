@@ -1,0 +1,70 @@
+2022-12-12 18:08:28.811  INFO 7252 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : Starting application using Java 1.8.0_202 on jim.lan with PID 7252 (started by hsk in /Users/hsk/Project/JavaFX/Book/Book)
+2022-12-12 18:08:28.820  INFO 7252 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2022-12-12 18:08:30.341  INFO 7252 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : Started application in 2.149 seconds (JVM running for 4.092)
+2022-12-12 18:08:30.375  WARN 7252 --- [JavaFX Application Thread] javafx                                   : Loading FXML document with JavaFX API of version 19 by JavaFX runtime of version 8.0.202
+2022-12-12 18:08:40.573  INFO 7252 --- [JavaFX Application Thread] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2022-12-12 18:09:21.357  INFO 7279 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : Starting application using Java 1.8.0_202 on jim.lan with PID 7279 (started by hsk in /Users/hsk/Project/JavaFX/Book/Book)
+2022-12-12 18:09:21.358  INFO 7279 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2022-12-12 18:09:23.105  INFO 7279 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : Started application in 2.211 seconds (JVM running for 3.856)
+2022-12-12 18:09:23.143  WARN 7279 --- [JavaFX Application Thread] javafx                                   : Loading FXML document with JavaFX API of version 19 by JavaFX runtime of version 8.0.202
+2022-12-12 18:10:09.518  INFO 7279 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2022-12-12 18:10:13.843  INFO 7332 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : Starting application using Java 1.8.0_202 on jim.lan with PID 7332 (started by hsk in /Users/hsk/Project/JavaFX/Book/Book)
+2022-12-12 18:10:13.845  INFO 7332 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2022-12-12 18:10:15.279  INFO 7332 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : Started application in 1.989 seconds (JVM running for 3.288)
+2022-12-12 18:10:15.308  WARN 7332 --- [JavaFX Application Thread] javafx                                   : Loading FXML document with JavaFX API of version 19 by JavaFX runtime of version 8.0.202
+2022-12-12 18:10:23.112  INFO 7332 --- [JavaFX Application Thread] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2022-12-12 18:10:53.723  INFO 7351 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : Starting application using Java 1.8.0_202 on jim.lan with PID 7351 (started by hsk in /Users/hsk/Project/JavaFX/Book/Book)
+2022-12-12 18:10:53.725  INFO 7351 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2022-12-12 18:10:55.474  INFO 7351 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : Started application in 2.27 seconds (JVM running for 3.362)
+2022-12-12 18:10:55.505  WARN 7351 --- [JavaFX Application Thread] javafx                                   : Loading FXML document with JavaFX API of version 19 by JavaFX runtime of version 8.0.202
+2022-12-12 18:12:19.806  INFO 7351 --- [JavaFX Application Thread] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2022-12-12 18:13:21.416  INFO 7404 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : Starting application using Java 1.8.0_202 on jim.lan with PID 7404 (started by hsk in /Users/hsk/Project/JavaFX/Book/Book)
+2022-12-12 18:13:21.418  INFO 7404 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2022-12-12 18:13:22.745  INFO 7404 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : Started application in 1.817 seconds (JVM running for 3.252)
+2022-12-12 18:13:22.776  WARN 7404 --- [JavaFX Application Thread] javafx                                   : Loading FXML document with JavaFX API of version 19 by JavaFX runtime of version 8.0.202
+2022-12-12 18:15:44.465  INFO 7404 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2022-12-12 18:15:48.182  INFO 7442 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : Starting application using Java 1.8.0_202 on jim.lan with PID 7442 (started by hsk in /Users/hsk/Project/JavaFX/Book/Book)
+2022-12-12 18:15:48.184  INFO 7442 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2022-12-12 18:15:49.536  INFO 7442 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : Started application in 2.084 seconds (JVM running for 3.16)
+2022-12-12 18:15:49.559  WARN 7442 --- [JavaFX Application Thread] javafx                                   : Loading FXML document with JavaFX API of version 19 by JavaFX runtime of version 8.0.202
+2022-12-12 18:15:49.708 ERROR 7442 --- [JavaFX Application Thread] d.f.j.AbstractJavaFxApplicationSupport   : Failed to load application: 
+
+java.lang.IllegalStateException: Cannot load login
+	at de.felixroske.jfxsupport.AbstractFxmlView.loadSynchronously(AbstractFxmlView.java:162) ~[springboot-javafx-support-2.1.6.jar:na]
+	at de.felixroske.jfxsupport.AbstractFxmlView.ensureFxmlLoaderInitialized(AbstractFxmlView.java:177) ~[springboot-javafx-support-2.1.6.jar:na]
+	at de.felixroske.jfxsupport.AbstractFxmlView.getView(AbstractFxmlView.java:189) ~[springboot-javafx-support-2.1.6.jar:na]
+	at de.felixroske.jfxsupport.AbstractJavaFxApplicationSupport.showView(AbstractJavaFxApplicationSupport.java:206) [springboot-javafx-support-2.1.6.jar:na]
+	at de.felixroske.jfxsupport.AbstractJavaFxApplicationSupport.showInitialView(AbstractJavaFxApplicationSupport.java:185) [springboot-javafx-support-2.1.6.jar:na]
+	at de.felixroske.jfxsupport.AbstractJavaFxApplicationSupport.lambda$start$6(AbstractJavaFxApplicationSupport.java:163) [springboot-javafx-support-2.1.6.jar:na]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$177(PlatformImpl.java:295) ~[jfxrt.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_202]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$178(PlatformImpl.java:294) ~[jfxrt.jar:na]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[jfxrt.jar:na]
+Caused by: javafx.fxml.LoadException: 
+/Users/hsk/Project/JavaFX/Book/Book/target/classes/view/LoginView.fxml:135
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601) ~[jfxrt.jar:na]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2579) ~[jfxrt.jar:na]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441) ~[jfxrt.jar:na]
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409) ~[jfxrt.jar:na]
+	at de.felixroske.jfxsupport.AbstractFxmlView.loadSynchronously(AbstractFxmlView.java:160) ~[springboot-javafx-support-2.1.6.jar:na]
+	... 9 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Invalid URL: Invalid URL or resource not found
+	at javafx.scene.image.Image.validateUrl(Image.java:1118) ~[jfxrt.jar:na]
+	at javafx.scene.image.Image.<init>(Image.java:693) ~[jfxrt.jar:na]
+	at com.sun.javafx.fxml.builder.JavaFXImageBuilder.build(JavaFXImageBuilder.java:47) ~[jfxrt.jar:na]
+	at com.sun.javafx.fxml.builder.JavaFXImageBuilder.build(JavaFXImageBuilder.java:37) ~[jfxrt.jar:na]
+	at javafx.fxml.FXMLLoader$ValueElement.processEndElement(FXMLLoader.java:763) ~[jfxrt.jar:na]
+	at javafx.fxml.FXMLLoader.processEndElement(FXMLLoader.java:2823) ~[jfxrt.jar:na]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2532) ~[jfxrt.jar:na]
+	... 12 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Invalid URL or resource not found
+	at javafx.scene.image.Image.validateUrl(Image.java:1110) ~[jfxrt.jar:na]
+	... 18 common frames omitted
+
+2022-12-12 18:15:51.437  INFO 7442 --- [JavaFX Application Thread] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2022-12-12 18:16:02.399  INFO 7449 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : Starting application using Java 1.8.0_202 on jim.lan with PID 7449 (started by hsk in /Users/hsk/Project/JavaFX/Book/Book)
+2022-12-12 18:16:02.401  INFO 7449 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2022-12-12 18:16:04.159  INFO 7449 --- [ForkJoinPool.commonPool-worker-1] o.s.boot.SpringApplication               : Started application in 2.307 seconds (JVM running for 3.363)
+2022-12-12 18:16:04.191  WARN 7449 --- [JavaFX Application Thread] javafx                                   : Loading FXML document with JavaFX API of version 19 by JavaFX runtime of version 8.0.202
+2022-12-12 18:16:12.370  INFO 7449 --- [JavaFX Application Thread] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...

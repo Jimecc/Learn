@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jim.sprjfx.mapper.BookMapper">
+
+    <resultMap id="BaseMap" type="com.jim.sprjfx.entity.Book">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="type" property="type"/>
+        <result column="press" property="press"/>
+        <result column="price" property="price"/>
+        <result column="max" property="max"/>
+        <result column="num" property="num"/>
+        <result column="author" property="author"/>
+        <result column="info" property="info"/>
+    </resultMap>
+
+    <insert id="insertBook" parameterType="com.jim.sprjfx.entity.Book" >
+        insert into book.book(name,type,author,press,price,num) values (#{name},#{type},#{author},#{press},#{price},#{num})
+    </insert>
+    <insert id="insert">
+        insert into book.book(name,author,type,press,price,max,num,info) values (#{name},#{author},#{type},#{press},#{price},#{max},#{num},#{info})
+    </insert>
+
+    <select id="getBookByID" parameterType="Integer" resultType="com.jim.sprjfx.entity.Book">
+        select * from book.book where #{id}=id;
+    </select>
+    <select id="getBookByName" parameterType="String" resultType="com.jim.sprjfx.entity.Book">
+        select * from book.book where #{name}=name;
+    </select>
+    <select id="getBookLikeName" resultType="com.jim.sprjfx.entity.Book">
+        select * from book.book where name like concat ('%',#{name},'%')
+    </select>
+
+    <delete id="DeleteByName" parameterType="String">
+        delete from book.book where #{name}=name;
+    </delete>
+
+    <update id="updateBook" parameterType="com.jim.sprjfx.entity.Book">
+        update book
+            <trim prefix="set" suffixOverrides=",">
+                <if test="name != null">
+                    name = #{name},
+                </if>
+                <if test="type != null">
+                    type = #{type},
+                </if>
+                <if test="price != 0">
+                    price = #{price},
+                </if>
+                <if test="press != null">
+                    press = #{press},
+                </if>
+                <if test="author != null">
+                    author = #{author},
+                </if>
+                <if test="num  > -1">
+                    num = #{num},
+                </if>
+                <if test="max != 0">
+                    max = #{max},
+                </if>
+                <if test="info != null">
+                    info = #{info},
+                </if>
+            </trim>
+        where #{id}=id;
+    </update>
+
+</mapper>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jim.sprjfx.mapper.LendMapper">
+
+    <resultMap id="BaseMap" type="com.jim.sprjfx.entity.Lend">
+        <id column="id" property="id"/>
+        <result column="uname" property="uname"/>
+        <result column="bname" property="bname"/>
+    </resultMap>
+
+    <insert id="insert" parameterType="com.jim.sprjfx.entity.Lend" >
+        insert into book.lend(uname,bname) values (#{uname},#{bname})
+    </insert>
+    <delete id="delete" parameterType="com.jim.sprjfx.entity.Lend">
+        delete from book.lend where uname=#{uname} and bname=#{bname}
+    </delete>
+
+    <select id="getLendLikeName" parameterType="String" resultMap="BaseMap">
+        select * from book.lend where uname like concat ('%',#{name},'%') OR bname like concat ('%',#{name},'%')
+    </select>
+    <select id="getBuUNameAndBname" parameterType="com.jim.sprjfx.entity.Lend" resultType="com.jim.sprjfx.entity.Lend">
+        select * from book.lend where uname=#{uname} and bname=#{bname}
+    </select>
+
+</mapper>

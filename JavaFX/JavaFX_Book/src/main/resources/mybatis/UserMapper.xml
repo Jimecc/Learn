@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jim.sprjfx.mapper.UserMapper">
+
+
+    <insert id="insertUser" parameterType="com.jim.sprjfx.entity.User" >
+        insert into book.user(name,username,password) values (#{name},#{username},#{password})
+    </insert>
+
+<!--    -->
+<!--    <select id="getBook" parameterType="Integer" resultType="com.jim.sprjfx.entity.Book">-->
+<!--        select * from book.book where #{name}=name;-->
+<!--    </select>-->
+    <select id="getUserByUsername" parameterType="String" resultType="com.jim.sprjfx.entity.User">
+        select * from book.user where #{username}=username;
+    </select>
+
+<!--    <delete id="DeleteByName" parameterType="String">-->
+<!--        delete from book.book where #{name}=name;-->
+<!--    </delete>-->
+
+<!--    <update id="UpdateBook" parameterType="com.jim.sprjfx.entity.Book">-->
+<!--        update book-->
+<!--        <trim prefix="set" suffixOverrides=",">-->
+<!--            <if test="name != null">-->
+<!--                name = #{name},-->
+<!--            </if>-->
+<!--            <if test="type != null">-->
+<!--                type = #{type},-->
+<!--            </if>-->
+<!--            <if test="price != null">-->
+<!--                price = #{price},-->
+<!--            </if>-->
+<!--            <if test="press != null">-->
+<!--                press = #{press},-->
+<!--            </if>-->
+<!--            <if test="author != null">-->
+<!--                author = #{author},-->
+<!--            </if>-->
+<!--            <if test="num != null">-->
+<!--                num = #{num},-->
+<!--            </if>-->
+<!--        </trim>-->
+<!--        where #{id}=id;-->
+<!--    </update>-->
+
+</mapper>

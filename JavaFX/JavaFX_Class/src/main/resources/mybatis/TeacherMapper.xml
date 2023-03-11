@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jim.sprjfx.mapper.TeacherMapper">
+
+    <insert id="insertTecher" parameterType="com.jim.sprjfx.entity.Teacher" >
+        insert into cclass.tec(name,username,password) values (#{name},#{username},#{password})
+    </insert>
+
+    <select id="getTeacherByUsername" parameterType="String" resultType="com.jim.sprjfx.entity.Teacher">
+        select * from cclass.tec where #{username}=username;
+    </select>
+
+</mapper>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="window_demo" prefHeight="510.0" prefWidth="811.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jim.sprjfx.view.Demo">
+   <children>
+      <ListView fx:id="kongzhitai" focusTraversable="false" layoutX="20.0" layoutY="179.0" prefHeight="311.0" prefWidth="241.0" />
+      <Pane layoutX="271.0" layoutY="142.0" prefHeight="116.0" prefWidth="520.0" style="-fx-background-color: #f3f3f3; -fx-background-radius: 10px;">
+         <children>
+            <TextField fx:id="TfInsertbookName" layoutX="14.0" layoutY="14.0" promptText="书名(必填)" />
+            <TextField fx:id="TfInsertbookAuthor" layoutX="180.0" layoutY="14.0" promptText="作者" />
+            <TextField fx:id="TfInsertbookPress" layoutX="346.0" layoutY="14.0" promptText="出版社" />
+            <TextField fx:id="TfInsertbookType" layoutX="14.0" layoutY="45.0" prefHeight="26.0" prefWidth="159.0" promptText="类型" />
+            <TextField fx:id="TfInsertbookPrice" layoutX="180.0" layoutY="45.0" prefHeight="26.0" prefWidth="159.0" promptText="价格" />
+            <TextField fx:id="TfInsertbookMax" layoutX="346.0" layoutY="45.0" promptText="最大数量" />
+            <TextField fx:id="TfInsertbookInfo" layoutX="14.0" layoutY="77.0" prefHeight="26.0" prefWidth="425.0" promptText="备注" />
+            <Button fx:id="ButtonInsert" layoutX="444.0" layoutY="77.0" mnemonicParsing="false" onMouseClicked="#ClickInsertBook" prefHeight="26.0" prefWidth="60.0" text="添 加" />
+         </children>
+      </Pane>
+      <Pane prefHeight="53.0" prefWidth="811.0" style="-fx-background-color: #b0afaf;">
+         <children>
+            <Label layoutX="14.0" layoutY="19.0" text="图书管理系统">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="271.0" layoutY="275.0" prefHeight="109.0" prefWidth="520.0" style="-fx-background-color: #f3f3f3; -fx-background-radius: 10px;">
+         <children>
+            <TextField fx:id="TfUpdateBookName" layoutX="15.0" layoutY="10.0" promptText="书名" />
+            <TextField fx:id="TfUpdateBookAuthor" layoutX="181.0" layoutY="10.0" promptText="作者" />
+            <TextField fx:id="TfUpdateBookPress" layoutX="347.0" layoutY="10.0" promptText="出版社" />
+            <TextField fx:id="TfUpdateBookType" layoutX="14.0" layoutY="41.0" prefHeight="26.0" prefWidth="74.0" promptText="类型" />
+            <TextField fx:id="TfUpdateBookPrice" layoutX="100.0" layoutY="41.0" prefHeight="26.0" prefWidth="74.0" promptText="价格" />
+            <TextField fx:id="TfUpdateBookMax" layoutX="181.0" layoutY="41.0" promptText="最大数量" />
+            <TextField fx:id="TfUpdateBookNum" layoutX="347.0" layoutY="42.0" promptText="剩余数量" />
+            <TextField fx:id="TfUpdateBookID" layoutX="15.0" layoutY="74.0" prefHeight="26.0" prefWidth="81.0" promptText="ID(必填)" style="-fx-border-color: Black; -fx-border-radius: 3px;" />
+            <TextField fx:id="TfUpdateBookInfo" layoutX="101.0" layoutY="74.0" prefHeight="26.0" prefWidth="337.0" promptText="备注" />
+            <Button layoutX="445.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#ClickButtonUpdate" prefHeight="26.0" prefWidth="60.0" text="更新" />
+         </children>
+      </Pane>
+      <Pane layoutX="21.0" layoutY="61.0" prefHeight="63.0" prefWidth="770.0" style="-fx-background-color: #f3f3f3; -fx-background-radius: 10px;">
+         <children>
+            <TextField fx:id="TfSearchAndDeleteByName" layoutX="14.0" layoutY="21.0" prefHeight="26.0" prefWidth="578.0" promptText="请输入书名/ID进行查询/删除操作" />
+            <Button layoutX="608.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#ClickSearchByName" prefHeight="26.0" prefWidth="68.0" text="查 找" />
+            <Button layoutX="688.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#ClickDeleteByName" prefHeight="26.0" prefWidth="68.0" text="删 除" />
+         </children>
+      </Pane>
+      <Pane layoutX="271.0" layoutY="402.0" prefHeight="88.0" prefWidth="520.0" style="-fx-background-color: #f3f3f3; -fx-background-radius: 10px;">
+         <children>
+            <TextField fx:id="LoutUname" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="211.0" promptText="借阅人姓名(必填)" />
+            <TextField fx:id="LoutBname" layoutX="231.0" layoutY="14.0" prefHeight="26.0" prefWidth="211.0" promptText="书籍名称(必填)" />
+            <Button layoutX="446.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#ClickButtonLendOut" prefHeight="26.0" prefWidth="60.0" text="借 阅" />
+            <TextField fx:id="LinUname" layoutX="14.0" layoutY="45.0" prefHeight="26.0" prefWidth="211.0" promptText="借阅人姓名(必填)" />
+            <TextField fx:id="LinBname" layoutX="231.0" layoutY="45.0" prefHeight="26.0" prefWidth="211.0" promptText="书籍名称(必填)" />
+            <Button layoutX="446.0" layoutY="45.0" mnemonicParsing="false" onMouseClicked="#ClickButtonLendin" prefHeight="26.0" prefWidth="60.0" text="归 还" />
+         </children>
+      </Pane>
+      <Label fx:id="Label1" layoutX="287.0" layoutY="123.0" />
+      <Label fx:id="Label2" layoutX="287.0" layoutY="258.0" />
+      <Label fx:id="Label3" layoutX="287.0" layoutY="384.0" />
+      <Label fx:id="Label4" layoutX="22.0" layoutY="181.0" />
+      <!-- 借阅查询 -->
+      <TextField fx:id="TfLendSearch" layoutX="22.0" layoutY="141.0" prefHeight="26.0" prefWidth="159.0" />
+      <Button layoutX="192.0" layoutY="141.0" mnemonicParsing="false" onMouseClicked="#ClickButtonLendSearch" text="借阅查询" />
+   </children>
+</AnchorPane>

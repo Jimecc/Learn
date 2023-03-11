@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="396.0" prefWidth="551.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jim.sprjfx.view.TRegisterView">
+   <children>
+      <Pane prefHeight="81.0" prefWidth="551.0" style="-fx-background-color: #555566;">
+         <children>
+            <Label layoutX="14.0" layoutY="41.0" text="教师注册中心" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="tname" onMouseClicked="#ClickTF" layoutX="49.0" layoutY="117.0" promptText="姓名" />
+      <TextField fx:id="tusername" onMouseClicked="#ClickTF" layoutX="49.0" layoutY="163.0" promptText="用户名" />
+      <TextField fx:id="tpassword1" onMouseClicked="#ClickTF" layoutX="49.0" layoutY="211.0" promptText="密码" />
+      <TextField fx:id="tpassword2" onMouseClicked="#ClickTF" layoutX="49.0" layoutY="260.0" promptText="确认密码" />
+      <Button fx:id="ButtonSubmit" layoutX="410.0" layoutY="328.0" mnemonicParsing="false" onMouseClicked="#ClickSubmit" onMouseMoved="#MovedSubmit" prefHeight="33.0" prefWidth="114.0" style="-fx-background-color: #33CCFF;" text="提  交" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="297.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#ClickGotoLogin" prefHeight="35.0" prefWidth="96.0" text="去登录" />
+      <Label fx:id="warning" layoutX="49.0" layoutY="297.0" textFill="#e16161" />
+      <Label fx:id="success" layoutX="49.0" layoutY="297.0" textFill="#268d38" />
+   </children>
+</AnchorPane>
