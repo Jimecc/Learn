@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>初识 Vue</title>
+    <!-- 引入 Vue -->
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        Hello World！<br>
+        <h1>你好，<font color="red">{{name}}</font>!</h1>
+        name: {{name}}<br>
+        aeg :{{age}}
+
+        <br>
+        <br>
+        <br>
+        {{1+1}}
+        {{Date.now()}}
+
+    </div>
+    
+    {{ 双花括号里面一定要是 JS 表达式 || JS 代码 }}
+    <br>
+    {{name}} <font color="Orange" size="4">不在容器中，不显示内容</font>
+
+
+    <script type="text/javascript">
+        Vue.config.productionTip = false // 阻止 vue 在启动时生成生产提示
+        
+        // 创建 Vue 实例 
+        new Vue({ // 可以有手下（ 组件 ）
+            el:'#root', //  用于指定当前Vue 实例为那个容器服务，值通常为 css 选择器字符串 、、 如果是 class 的话就.root
+            data:{ //data 中用于存储数据，数据共 el 所指定的容器使用，值暂时先写成一个对象。
+                name: '尚硅谷',
+                age: 18
+            }
+        })
+
+
+        // axios({
+        //     url:'https://cnblog.'
+        // })
+    </script>
+</body>
+
+</html>
+
+<!--
+    1. 想让 Vue 工作，必须创建 Vue 实例，并且传入一个配置对象
+    2. root 容器里的代码依然符合 html 规范，只不过混入了一些图书的 Vue 语法
+    3. root 容器里的代码被称为是【 Vue 模板 】。
+    4. vue 实例和容器是一一对应的
+    5. 真是开发中只有一个 Vue 实例，但是会有很多组件
+    6. {{xxx}} 中的 xxx 要写 js 表达式，且 xxx 可以自动读取到 data 中所有的属性
+    7. 一旦 data 中的数据发生变化，那么页面（容器）中用到该数据的地方也会自动更新
+-->
+
+<!--
+    注意区分：js 表达式 和 js 代码（语句）
+        1. 表达式： 一个表达式会生成一个值，可以放在任何一个需要值的地方
+            （1） a
+            （2） a+b
+            （3） demo(1)
+            （4） Date.now()
+            （5） x===y?'a':'b'
+        2. js 代码（语句）
+            （1） if(){}
+            （2） for(){}
+-->

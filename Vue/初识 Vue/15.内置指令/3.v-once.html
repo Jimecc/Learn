@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>v-once 指令</title>
+        <!-- 引入 Vue -->
+        <script type="text/javascript" src="../js/vue.js"></script>
+    </head>
+    <body>
+        <div id="root">
+            <h2 v-once>初始 n 值是{{n}}</h2>
+            <h2>当前 n 值是{{n}}</h2>
+            <button @click="n++">点我 n+1</button>
+        </div>
+        <script type="text/javascript">
+            Vue.config.productionTip = false 
+            // 创建 Vue 实例 
+            new Vue({
+                el:'#root',
+                data:{
+                    n:1
+                }
+            })
+        </script>
+    </body>
+</html>

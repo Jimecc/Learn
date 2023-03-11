@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>天气案例</title>
+        <!-- 引入 Vue -->
+        <script type="text/javascript" src="../js/vue.js"></script>
+    </head>
+    <body>
+        <div id="root">
+            <h2>今天天气很{{info}}</h2>
+            <button @click=" isHot = !isHot"> 切换天气</button>
+        </div>
+        <script type="text/javascript">
+            Vue.config.productionTip = false 
+            // 创建 Vue 实例 
+            const vm = new Vue({
+                el:'#root',
+                data:{
+                    isHot:true
+                },
+                computed:{
+                    info(){
+                        return this.isHot?'炎热':'凉爽'
+                    }
+                },
+                methods: {
+                    // change(){
+                    //     this.isHot = !this.isHot
+                    // }
+                },
+                watch:{
+                    isHot:{
+                        immediate:true,//初始化时让 handler 调用一下
+                        // 当 ishot 发生改变时被调用
+                        handler(newValue,oldValue){
+                            console.log('isHot 被修改了',newValue,oldValue)
+                        }
+                    }
+                },
+            })
+            vm.$watch('isHot',{
+                handler(newValue,oldValue){
+                    console.log('isHot 被修改了',newValue,oldValue)
+                }
+            })
+
+        </script>
+    </body>
+</html>

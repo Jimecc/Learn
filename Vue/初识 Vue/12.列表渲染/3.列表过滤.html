@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title></title>
+        <!-- 引入 Vue -->
+        <script type="text/javascript" src="../js/vue.js"></script>
+    </head>
+    <body>
+        <div id="root">
+            <input type="text" v-model="sename">请输入名字</input>
+            <button @click.once="add">搜索</button>
+
+            <ul>
+                <li v-for="(p,index) of persons" :key="p.id">
+                    {{p.name}} {{p.age}} {{p.sex}}
+                </li>
+                
+            </ul>
+        </div>
+        <script type="text/javascript">
+            Vue.config.productionTip = false 
+            // 创建 Vue 实例 
+            new Vue({
+                el:'#root',
+                data:{
+                    sename:'',
+                    persons:[
+                        {id:'001',name:'周杰伦',age:18,sex:"男"},
+                        {id:'002',name:'周冬雨',age:19,sex:"女"},
+                        {id:'003',name:'马冬梅',age:20,sex:"女"},
+                        {id:'004',name:'温兆伦',age:20,sex:"男"}
+                    ]
+                }
+            })
+        </script>
+    </body>
+</html>

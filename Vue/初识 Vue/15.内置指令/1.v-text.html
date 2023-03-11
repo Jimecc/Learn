@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>v-test</title>
+        <!-- 引入 Vue -->
+        <script type="text/javascript" src="../js/vue.js"></script>
+    </head>
+    <body>
+        <div id="root">
+            <div>{{name}}</div>
+            <div v-text="name"></div>
+        </div>
+        <script type="text/javascript">
+            Vue.config.productionTip = false 
+            // 创建 Vue 实例 
+            new Vue({
+                el:'#root',
+                data:{
+                    name:'花生壳'
+                }
+            })
+        </script>
+    </body>
+</html>

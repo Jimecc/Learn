@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>数据绑定</title>
+    <!-- 引入 Vue -->
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+
+<body>
+    <h1>数据绑定</h1>
+    <div id="root">
+        <!--普通写法-->
+        <h3>普通写法</h3>
+        单向数据绑定:<input type="text" v-bind:value="name"><br>
+        双向数据绑定:<input type="text" v-model:value="name"><br>
+
+        <!--简写-->
+        <h3>简写</h3>
+        单向数据绑定:<input type="text" :value="name"><br>
+        双向数据绑定:<input type="text" v-model="name">
+
+        <!-- 如下代码是错误的，因为 v-model 只能应用在表单类元素（输入类元素）上 现在修改正确了-->
+        <h2 v-bind:x="name">{{name}}</h2>
+        <h3>{{$options}}</h3>
+        <h3>{{_c}}</h3>
+
+    </div>
+
+    <script type="text/javascript">
+        // Vue.config.productionTip = false
+        const v = new Vue({
+            // el:"#root", // 第一种写法
+            // data 的第一种写法：对象时
+            // data:{
+            //     name:"尚硅谷"
+            // }
+            //data 的第二种写法，函数式：
+            // data(){
+            data:function(){
+                console.log("$$$",this);
+                return{
+                    name:'123'
+                }
+            }
+        })
+
+        
+        setTimeout(() => {
+            v.$mount("#root") // 第二种写法
+        }, 1000);
+        
+        /**
+         * data 与 el 的两种写法
+         * 1.el 有两种写法
+         *  new Vue 时候配置 el 属性
+         *  先创建 Vue 示例，随后通过 v.$mount("#root") 指定 el 的值
+         * data 的两种写法
+         *  对象式
+         *  函数式
+         *  如何选择：目前哪种方式都可以，随着学习的深入，必须使用函数式
+         * 一个重要的原则：
+         *  由 Vue 管理函数，一定不要写箭头函数，一旦写了箭头函数，this 就不再是 Vue 实例了
+         *  data:function(){} == data(){}
+         * */
+    </script>
+</body>
+
+</html>
+
+<!--
+    Vue 中两种数据绑定的方式
+        1. 单向绑定（v-bind） :数据只能从 data 流向页面
+        2. 双向绑定（v-model）:数据不仅能从 data 流向页面，也可以从页面流向 data
+            备注：
+                1. 双向绑定一般都应用在表单类元素上（如：input、select）
+                2. v-model:value 可以简写为 v-model，因为 v-model 默认手机的就是 value 值。
+-->

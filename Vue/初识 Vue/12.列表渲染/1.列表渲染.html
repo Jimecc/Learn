@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title></title>
+        <!-- 引入 Vue -->
+        <script type="text/javascript" src="../js/vue.js"></script>
+    </head>
+    <body>
+
+
+        <div id="root">
+            <el-table :data="persons" style="width: 100%">
+                <el-table-column prop="persons.name" label="姓名" width="180">
+                </el-table-column>
+                <el-table-column prop="persons.age" label="地址">
+                </el-table-column>
+            </el-table>
+        </div>
+        <script type="text/javascript">
+            Vue.config.productionTip = false 
+            // 创建 Vue 实例 
+            new Vue({
+                el:'#root',
+                data:{
+                    persons:[
+                        {id:'001',name:'张三',age:18},
+                        {id:'002',name:'李四',age:19},
+                        {id:'003',name:'王五',age:20},
+                        {id:'004',name:'张八',age:21}
+                    ]
+                }
+            })
+        </script>
+    </body>
+</html>
+

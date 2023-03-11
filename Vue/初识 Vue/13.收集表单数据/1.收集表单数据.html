@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .basic{
+                width:400px;
+                height:600px;
+                border:1px solid rgb(255, 49, 49);
+            }
+        </style>
+        <meta charset="UTF-8" />
+        <title>收集表单数据</title>
+        <!-- 引入 Vue -->
+        <script type="text/javascript" src="../js/vue.js"></script>
+    </head>
+    <body>
+        <div id="root" class="basic">
+            <br><br>
+            <div>
+            <form>
+                账号：<input type="text" v-model="user.account"><br><br>
+                密码：<input type="password" v-model="user.password"><br><br>
+                年龄：<input type="number" v-model.number="user.age"><br><br>
+                性别：
+                保密<input type="radio" name="sex" v-model="user.sex" value="unknown">
+                男<input type="radio" name="sex" v-model="user.sex" value="male">
+                女<input type="radio" name="sex" v-model="user.sex" value="female"><br><br>
+                爱好：<br><br>
+                学习  <input type="checkbox" v-model="user.hobby" value="study">
+                打游戏<input type="checkbox" v-model="user.hobby" value="game">
+                听音乐<input type="checkbox" v-model="user.hobby" value="music"><br><br>
+                所属校区：
+                <select v-model="user.address">
+                    <option value="">请选择校区</option>
+                    <option value="beijing">北京</option>
+                    <option value="tianjin">天津</option>
+                    <option value="wuhan">武汉</option>
+                </select>
+                <br><br>
+                其他信息：<br>
+                <textarea v-model="user.other" rows="10"></textarea>
+                <br><br>
+                <input type="checkbox" v-model="user.agree">阅读并接受<a href="https://www.baidu.com/">《用户协议》</a>
+            </form>
+            </div>
+        </div>
+        <script type="text/javascript">
+            Vue.config.productionTip = false 
+            // 创建 Vue 实例 
+            new Vue({
+                el:'#root',
+                data:{
+                    user:{
+                        account:'',
+                        password:'',
+                        sex:'unknown',
+                        agree:'',
+                        hobby:[],
+                        address:'',
+                        other:'',
+                        age:''
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>
