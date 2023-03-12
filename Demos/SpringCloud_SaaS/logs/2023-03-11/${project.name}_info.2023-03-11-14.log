@@ -1,0 +1,27 @@
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:03,431 INFO [Thread-15][ExecutorConfigurationSupport.java:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:14,896 INFO [main][StartupInfoLogger.java:50] - Starting SailingBootstrap on jim.lan with PID 26476 (/Users/hsk/Documents/GitHub/Learn/Demos/SpringCloud_SaaS/sailing/target/classes started by hsk in /Users/hsk/Documents/GitHub/Learn/Demos/SpringCloud_SaaS)
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:14,904 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:16,374 INFO [main][RepositoryConfigurationDelegate.java:244] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:16,380 INFO [main][RepositoryConfigurationDelegate.java:126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:16,435 INFO [main][RepositoryConfigurationDelegate.java:182] - Finished Spring Data repository scanning in 39ms. Found 0 repository interfaces.
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:17,116 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 56085 (http)
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:17,135 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-56085"]
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:17,142 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:17,143 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:17,214 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hsk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:17,339 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:17,341 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 2375 ms
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:18,255 INFO [main][EndpointLinksResolver.java:59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:18,362 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:18,511 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:18,880 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:18,893 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:18,912 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:19,065 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-56085"]
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:19,097 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 56085 (http) with context path '/sailing'
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:19,107 INFO [main][StartupInfoLogger.java:59] - Started SailingBootstrap in 4.818 seconds (JVM running for 5.889)
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:19,635 INFO [RMI TCP Connection(3)-192.168.200.176][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:19,638 INFO [RMI TCP Connection(3)-192.168.200.176][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:19,668 INFO [RMI TCP Connection(3)-192.168.200.176][FrameworkServlet.java:546] - Completed initialization in 29 ms
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:19,746 INFO [RMI TCP Connection(2)-192.168.200.176][EpollProvider.java:68] - Starting without optional epoll library
+[${project.name}][${env:SERVER_PORT}] 2023-03-11 14:57:19,751 INFO [RMI TCP Connection(2)-192.168.200.176][KqueueProvider.java:70] - Starting without optional kqueue library

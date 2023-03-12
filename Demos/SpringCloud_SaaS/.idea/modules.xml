@@ -3,6 +3,26 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringCloud_SaaS.iml" filepath="$PROJECT_DIR$/.idea/SpringCloud_SaaS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itcast-mp-springboot/itcast-mp-springboot.iml" filepath="$PROJECT_DIR$/itcast-mp-springboot/itcast-mp-springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos-discover/nacos-discover.iml" filepath="$PROJECT_DIR$/nacos-discover/nacos-discover.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos-discover/nacos-dubbo-service1/nacos-dubbo-service1.iml" filepath="$PROJECT_DIR$/nacos-discover/nacos-dubbo-service1/nacos-dubbo-service1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos-discover/nacos-dubbo-service2/nacos-dubbo-service2.iml" filepath="$PROJECT_DIR$/nacos-discover/nacos-dubbo-service2/nacos-dubbo-service2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos-discover/nacos-restful-consumer/nacos-restful-consumer.iml" filepath="$PROJECT_DIR$/nacos-discover/nacos-restful-consumer/nacos-restful-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos-discover/nacos-restful-provider/nacos-restful-provider.iml" filepath="$PROJECT_DIR$/nacos-discover/nacos-restful-provider/nacos-restful-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sailing/sailing.iml" filepath="$PROJECT_DIR$/sailing/sailing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos-discover/nacos-dubbo-service1/service1-api/service1-api.iml" filepath="$PROJECT_DIR$/nacos-discover/nacos-dubbo-service1/service1-api/service1-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos-discover/nacos-dubbo-service1/service1-server/service1-server.iml" filepath="$PROJECT_DIR$/nacos-discover/nacos-dubbo-service1/service1-server/service1-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos-discover/nacos-dubbo-service2/service2-api/service2-api.iml" filepath="$PROJECT_DIR$/nacos-discover/nacos-dubbo-service2/service2-api/service2-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos-discover/nacos-dubbo-service2/service2-server/service2-server.iml" filepath="$PROJECT_DIR$/nacos-discover/nacos-dubbo-service2/service2-server/service2-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shanjupay/shanjupay.iml" filepath="$PROJECT_DIR$/shanjupay/shanjupay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shanjupay/shanjupay-common/shanjupay-common.iml" filepath="$PROJECT_DIR$/shanjupay/shanjupay-common/shanjupay-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shanjupay/shanjupay-merchant/shanjupay-merchant.iml" filepath="$PROJECT_DIR$/shanjupay/shanjupay-merchant/shanjupay-merchant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shanjupay/shanjupay-merchant/shanjupay-merchant-api/shanjupay-merchant-api.iml" filepath="$PROJECT_DIR$/shanjupay/shanjupay-merchant/shanjupay-merchant-api/shanjupay-merchant-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shanjupay/shanjupay-merchant-application/shanjupay-merchant-application.iml" filepath="$PROJECT_DIR$/shanjupay/shanjupay-merchant-application/shanjupay-merchant-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shanjupay/shanjupay-merchant/shanjupay-merchant-server/shanjupay-merchant-server.iml" filepath="$PROJECT_DIR$/shanjupay/shanjupay-merchant/shanjupay-merchant-server/shanjupay-merchant-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shanjupay/shanjupay-transaction/shanjupay-transaction.iml" filepath="$PROJECT_DIR$/shanjupay/shanjupay-transaction/shanjupay-transaction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shanjupay/shanjupay-transaction/shanjupay-transaction-api/shanjupay-transaction-api.iml" filepath="$PROJECT_DIR$/shanjupay/shanjupay-transaction/shanjupay-transaction-api/shanjupay-transaction-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shanjupay/shanjupay-transaction/shanjupay-transaction-service/shanjupay-transaction-service.iml" filepath="$PROJECT_DIR$/shanjupay/shanjupay-transaction/shanjupay-transaction-service/shanjupay-transaction-service.iml" />
     </modules>
   </component>
 </project>

@@ -3,19 +3,153 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cd6fecd1-7705-435a-84ef-b9d16fec1283" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/shanjupay/shanjupay-merchant-application/src/main/java/com/jim/shanjupay/merchant/controller/AppController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanjupay/shanjupay-merchant/shanjupay-merchant-api/src/main/java/com/shanjupay/merchant/api/AppService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanjupay/shanjupay-merchant/shanjupay-merchant-server/src/main/java/com/shanjupay/merchant/convert/AppConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanjupay/shanjupay-merchant/shanjupay-merchant-server/src/main/java/com/shanjupay/merchant/service/AppServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos-discover/nacos-restful-consumer/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/nacos-discover/nacos-restful-consumer/target/classes/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay/shanjupay-common/shanjupay-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay/shanjupay-common/shanjupay-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay/shanjupay-common/src/main/java/com/shanjupay/common/domain/CommonErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay/shanjupay-common/src/main/java/com/shanjupay/common/domain/CommonErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay/shanjupay-common/target/classes/com/shanjupay/common/domain/CommonErrorCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay/shanjupay-common/target/classes/com/shanjupay/common/domain/CommonErrorCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay/shanjupay-merchant-application/target/classes/com/jim/shanjupay/merchant/controller/MerchantController.class" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay/shanjupay-merchant-application/target/classes/com/jim/shanjupay/merchant/controller/MerchantController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay/shanjupay-merchant-application/target/generated-sources/annotations/com/jim/shanjupay/merchant/convert/MerchantConvertImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay/shanjupay-merchant-application/target/generated-sources/annotations/com/jim/shanjupay/merchant/convert/MerchantConvertImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay/shanjupay-merchant/shanjupay-merchant-server/target/generated-sources/annotations/com/shanjupay/merchant/convert/MerchantConvertImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay/shanjupay-merchant/shanjupay-merchant-server/target/generated-sources/annotations/com/shanjupay/merchant/convert/MerchantConvertImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay/shanjupay-merchant/shanjupay-merchant.iml" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay/shanjupay-merchant/shanjupay-merchant.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$USER_HOME$/DevTools/Maven" />
         <option name="userSettingsFile" value="$USER_HOME$/DevTools/Maven/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProjectId" id="2Mr5X0IdmkajknlC6QQJQLtPa5m" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="build.tools" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.MerchantApplicationBootstrap">
+    <configuration name="MerchantApplicationBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="shanjupay-merchant-application" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jim.shanjupay.merchant.MerchantApplicationBootstrap" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MerchantBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="shanjupay-merchant-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shanjupay.merchant.MerchantBootstrap" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SailingBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="sailing" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.sailing.SailingBootstrap" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringRestConsumerBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="nacos-restful-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jim.nacos.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jim.nacos.consumer.SpringRestConsumerBootstrap" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringRestProviderBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="nacos-restful-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jim.nacos.provider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jim.nacos.provider.SpringRestProviderBootstrap" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="shanjupay-transaction-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shanjupay.transaction.TransactionBootstrap" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SpringRestConsumerBootstrap" />
+        <item itemvalue="Spring Boot.SpringRestProviderBootstrap" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd6fecd1-7705-435a-84ef-b9d16fec1283" name="Changes" comment="" />
+      <created>1678512896382</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678512896382</updated>
+      <workItem from="1678512897668" duration="5814000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

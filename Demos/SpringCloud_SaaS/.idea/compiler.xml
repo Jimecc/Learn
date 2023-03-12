@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="service1-server" />
+        <module name="shanjupay-merchant-api" />
+        <module name="shanjupay-transaction-api" />
+        <module name="service1-api" />
+        <module name="service2-server" />
+        <module name="nacos-restful-provider" />
+        <module name="shanjupay-transaction-service" />
+        <module name="service2-api" />
+        <module name="shanjupay-common" />
+        <module name="itcast-mp-springboot" />
+        <module name="nacos-restful-consumer" />
+        <module name="shanjupay-merchant-server" />
+        <module name="shanjupay-merchant-application" />
+        <module name="sailing" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="itcast-mp-springboot" target="8" />
+      <module name="nacos-discover" target="1.7" />
+      <module name="nacos-dubbo-service1" target="8" />
+      <module name="nacos-dubbo-service2" target="8" />
+      <module name="nacos-restful-consumer" target="8" />
+      <module name="nacos-restful-provider" target="8" />
+      <module name="sailing" target="1.8" />
+      <module name="service1-api" target="8" />
+      <module name="service1-server" target="8" />
+      <module name="service2-api" target="8" />
+      <module name="service2-server" target="8" />
+      <module name="shanjupay" target="1.8" />
+      <module name="shanjupay-common" target="1.8" />
+      <module name="shanjupay-merchant" target="1.8" />
+      <module name="shanjupay-merchant-api" target="1.8" />
+      <module name="shanjupay-merchant-application" target="1.8" />
+      <module name="shanjupay-merchant-server" target="1.8" />
+      <module name="shanjupay-transaction" target="1.8" />
+      <module name="shanjupay-transaction-api" target="1.8" />
+      <module name="shanjupay-transaction-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="itcast-mp-springboot" options="-parameters" />
+      <module name="sailing" options="-parameters" />
+      <module name="shanjupay-common" options="-parameters -bootclasspath $USER_HOME$/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/rt.jar;$USER_HOME$/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jce.jar" />
+      <module name="shanjupay-merchant-api" options="-parameters" />
+      <module name="shanjupay-merchant-application" options="-parameters" />
+      <module name="shanjupay-merchant-server" options="-parameters" />
+      <module name="shanjupay-transaction" options="-parameters" />
+      <module name="shanjupay-transaction-api" options="-parameters -bootclasspath $USER_HOME$/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/rt.jar;$USER_HOME$/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jce.jar" />
+      <module name="shanjupay-transaction-service" options="-parameters" />
+    </option>
+  </component>
+</project>
